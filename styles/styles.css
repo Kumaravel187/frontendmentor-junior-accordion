@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "regular";
+  src: url("../assets/fonts/static/WorkSans-Regular.ttf") format("truetype");
+  /* You can add additional font properties here, such as font-weight and font-style */
+}
+@font-face {
+  font-family: "bold";
+  src: url("../assets/fonts/static/WorkSans-Bold.ttf") format("truetype");
+  /* You can add additional font properties here, such as font-weight and font-style */
+}
+@font-face {
+  font-family: "semi";
+  src: url("../assets/fonts/static/WorkSans-SemiBold.ttf") format("truetype");
+  /* You can add additional font properties here, such as font-weight and font-style */
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+  list-style-type: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "regular", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  min-height: 100vh;
+  position: relative;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Styling for the body */
+.body {
+  /* Styling for the main content container */
+  /* Styling for the FAQ section */
+}
+.body .main {
+  background: url(../assets/images/background-pattern-mobile.svg);
+  height: 15em;
+}
+.body .section {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  background-color: hsl(275, 100%, 97%);
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  padding: 1.5em;
+  box-shadow: 7px 12px 14px 10px rgba(140, 105, 145, 0.2);
+  /* Styling for the first FAQ article */
+  /* Styling for FAQ articles other than the first one */
+}
+.body .section .article:first-child {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 0.65em 0;
+}
+.body .section .article:first-child .img {
+  width: 1.5em;
+}
+.body .section .article:first-child .FAQ {
+  margin-left: 0.9em;
+  font-size: 1.75rem;
+  font-family: "bold", sans-serif;
+}
+.body .section .article:not(:first-child) {
+  transition: all 300ms ease-in-out;
+  /* Styling for shown and toggle containers */
+  /* Styling for shown container */
+  /* Styling for toggle container */
+}
+.body .section .article:not(:first-child) .container-show,
+.body .section .article:not(:first-child) .container-toggle {
+  padding: 0.75em 0;
+}
+.body .section .article:not(:first-child) .container-shown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.body .section .article:not(:first-child) .container-shown p {
+  font-size: 1.1em;
+  font-family: "bold", sans-serif;
+  color: hsl(292, 42%, 14%);
+  line-height: 1.1;
+}
+.body .section .article:not(:first-child) .container-shown img {
+  margin-left: 2em;
+  height: 2.25em;
+  width: auto;
+  cursor: pointer;
+}
+.body .section .article:not(:first-child) .container-toggle p {
+  transition: height 300ms ease-in-out;
+  height: 0;
+  overflow: hidden;
+  font-size: 0.85em;
+  color: hsl(292, 42%, 14%);
+}
+
+/* Media query for larger screens (min-width: 800px) */
+@media (min-width: 800px) {
+  .body .main {
+    background: url(../assets/images/background-pattern-mobile.svg);
+  }
+  .body .main .section {
+    gap: 0.5em;
+    max-width: 32rem;
+    /* Styling for FAQ articles on larger screens */
+  }
+  .body .main .section .article:not(:first-child) .container-toggle .show-links {
+    transition: height 300ms ease-in-out;
+    height: 5em;
+    overflow: visible;
+    margin-bottom: 0.5em;
+  }
+}/*# sourceMappingURL=styles.css.map */
