@@ -23,7 +23,7 @@ Users should be able to:
 ### Screenshot
 
 <img src="./image.png" alt="desktop view" width="400" height="200" />
-<img src="./image-1.png" alt="mobile view" width="250" height="500" />
+<img src="./image-1.png" alt="mobile view" width="350" height="500" />
 
 ## My process
 
